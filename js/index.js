@@ -1,12 +1,26 @@
+//capturar os elementos
+
+
+
+
+
+
 // ITERATION 1
 
+
 function updateSubtotal(product) {
+
   console.log('Calculating subtotal, yey!');
 
   //... your code goes here
 }
 
 function calculateAll() {
+
+  buttonPrice.addEventListener("click", () => {
+    subtotalPrice.innerText = buttonInput.value * priceSell.innerText;
+  })
+
   // code in the following two lines is added just for testing purposes.
   // it runs when only iteration 1 is completed. at later point, it can be removed.
   const singleProduct = document.querySelector('.product');
