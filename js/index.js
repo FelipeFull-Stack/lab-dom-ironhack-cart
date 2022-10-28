@@ -1,5 +1,22 @@
 //capturar os elementos
+// labelPrice preço a ser capturado para calculo
+// inputQuantity quantidade a ser capturada para calculo
+// subtotal onde eu quero exibir o calculo
+// buttonRemove o que vai limpar os cases
 
+const labelPrice = document.getElementById("labelPrice"); //capturei labelPrice
+const inputQuantity = document.getElementById("inputQuantity");//capturei inputQuantity
+const subtotal = document.getElementById("subtotal");//capturei onde vou exibir
+const buttonRemove = document.getElementById("buttonRemove");
+
+for (let i = 0; i < inputQuantity.clientHeight; i++) {
+  inputQuantity[i].addEventListener("", () => {
+    subtotal.innerText = product[i].children[0].innerText;
+
+    subtotal.appendChild();
+    
+  })
+}
 
 
 
